@@ -1,0 +1,393 @@
+* {
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 10vh;
+    background-color: #000000;
+}
+
+#logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: #ececec;
+}
+
+#logo i {
+    font-size: 40px;
+}
+
+#logo p {
+    font-size: 26px;
+}
+
+#navegacao nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+#navegacao nav a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    color: #ffffff;
+    text-decoration: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+    transition: all 1s ease;
+}
+
+#navegacao nav a i {
+    font-size: 25px;
+}
+
+#navegacao nav a p {
+    font-size: 10px;
+}
+
+#navegacao nav a:hover {
+    color: #9d8af5;
+    border-top: 2px solid #9d8af5;
+    border-bottom: 2px solid #9d8af5;
+}
+
+
+#redessociais nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+#redessociais nav a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    text-decoration: none;
+    color: #ececec;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+    transition: all 1s esse;
+}
+
+#redessociais nav a:hover {
+    color: #9d8af5;
+    border-top: 2px solid #9d8af5;
+    border-bottom: 2px solid #9d8af5;
+}
+
+#redessociais nav a i {
+    font-size: 28px;
+}
+
+#redessociais nav a p {
+    font-size: 10px;
+}
+
+#contato nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+#contato nav a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    color: #ececec;
+    text-decoration: none;
+    transition: all 1s ease;
+}
+
+#contato nav a:hover {
+    color: #9d8af5;
+}
+
+#contato nav a i {
+    font-size: 30px;
+}
+
+#contato nav a p {
+    font-size: 10px;
+}
+
+#entrar button {
+    background-color: #000000;
+    height: 40px;
+    width: 100px;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 16px;
+    transition: all 1s ease;
+}
+
+#entrar button:hover {
+    background-color: #b190ee;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    color: #000000;
+
+}
+
+/* Estiliza a área dos cards */
+.cards {
+    display: flex;
+    /* Usa Flexbox para layout */
+    flex-direction: column;
+    /* Alinha itens na vertical */
+    align-items: center;
+    /* Alinha itens horizontalmente ao centro */
+    justify-content: center;
+    /* Centraliza os itens verticalmente */
+    background-color: var(--verdemedio);
+    /* Cor de fundo branca */
+    padding: 70px 30px;
+    /* Espaçamento interno */
+}
+
+/* Estiliza o estado de hover da área dos cards */
+.cards:hover {
+    background-color: var(--verdeescuro);
+    /* Fundo cinza claro no hover */
+}
+
+/* Estiliza os títulos dentro da área dos cards */
+.cards h2 {
+    color: var(--branco);
+    font-size: 50px;
+    /* Tamanho da fonte dos títulos */
+    margin-bottom: 40px;
+    /* Margem inferior dos títulos */
+    text-shadow: 2px 2px 2px var(--cinza);
+    /* Sombra do texto cinza */
+
+}
+
+/* Estiliza a área que contém os cards */
+.grupo-cards {
+    display: flex;
+    /* Usa Flexbox para layout */
+    flex-direction: row;
+    /* Alinha itens na horizontal */
+    align-items: center;
+    /* Alinha itens verticalmente ao centro */
+    justify-content: space-around;
+    /* Distribui itens igualmente com espaçamento */
+    gap: 20px;
+    /* Espaçamento entre os cards */
+
+}
+
+/* Estiliza cada card individualmente */
+.card {
+    border: 1px solid var(--cinza);
+    /* Borda preta */
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 2px 2px 2px #000000;
+    /* Sombra do card cinza */
+    width: 15%;
+    /* Largura do card */
+    height: 500px;
+    /* Altura do card */
+    opacity: 0.5;
+    /* Opacidade reduzida */
+    background-color: var(--branco);
+    /* Cor de fundo branca */
+    transition: all 1s ease;
+    border-color: #000000;
+    /* Transição suave de 1 segundo */
+}
+
+/* Estiliza o estado de hover dos cards */
+.card:hover {
+    opacity: 1;
+    /* Opacidade total no hover */
+    transform: translateY(-20px);
+    /* Move o card para cima em 20px */
+}
+
+/* Estiliza as imagens dentro dos cards */
+.card img {
+    width: 100%;
+    /* Largura da imagem igual à largura do card */
+    height: 250px;
+    /* Altura da imagem */
+}
+
+/* Estiliza o estado de hover das imagens dentro dos cards */
+.card img:hover {
+    filter: saturate(1.3);
+    /* Aumenta a saturação da imagem */
+}
+
+/* Estiliza a área de informações dos cards */
+.card-info {
+    margin: 20px 10px;
+    /* Margem interna */
+}
+
+/* Estiliza os títulos dentro dos cards */
+.card h3 {
+    font-size: 30px;
+    /* Tamanho da fonte dos títulos */
+    font-weight: 700;
+    /* Peso da fonte em negrito */
+    text-align: center;
+    /* Alinha o texto ao centro */
+    margin-bottom: 20px;
+    /* Margem inferior dos títulos */
+}
+
+/* Estiliza os parágrafos dentro dos cards */
+.card p {
+    height: 100px;
+    /* Altura dos parágrafos */
+    font-size: 14px;
+    /* Tamanho da fonte dos parágrafos */
+}
+
+/* Estiliza a área do botão dentro dos cards */
+.card-button {
+    display: flex;
+    /* Usa Flexbox para layout */
+    justify-content: center;
+    /* Centraliza o botão horizontalmente */
+}
+
+/* Estiliza o botão dentro dos cards */
+.card-button button {
+    width: 150px;
+    /* Largura do botão */
+    height: 40px;
+    /* Altura do botão */
+    font-size: 16px;
+    /* Tamanho da fonte do botão */
+    font-weight: 700;
+    /* Peso da fonte em negrito */
+    background-color: var(--branco);
+    /* Cor de fundo branca */
+    border: 2px solid var(--preto);
+    /* Borda preta */
+    border-radius: 5px;
+    /* Bordas arredondadas */
+    cursor: pointer;
+    /* Cursor de ponteiro ao passar sobre o botão */
+    transition: all 1s ease;
+    /* Transição suave de 1 segundo */
+}
+
+/* Estiliza o estado de hover do botão dentro dos cards */
+.card-button button:hover {
+    background-color: var(--preto);
+    /* Cor de fundo preta no hover */
+    color: var(--branco);
+    /* Cor do texto branca no hover */
+}
+
+.competenciasocioemocional {
+    display: flex;
+    flex-direction: row;
+    padding-left: 100px;
+    padding-right: 400px;
+    border-top: 4px solid var(--preto);
+}
+
+.competencia-imagem {
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.competencia-imagem img {
+    height: 100%;
+}
+
+.competencia-imagem img:hover {
+    filter: saturate(1.3);
+    /* Aumenta a saturação da imagem */
+}
+
+.competencia-texto {
+    padding-left: 100px;
+    padding-right: 100px;
+    ;
+}
+
+.competencia-texto h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 2px var(--preto);
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 60px;
+}
+
+.competencia-texto h3 {
+    font-size: 24px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 2px var(--preto);
+}
+
+.competencia-texto p {
+    font-size: 18px;
+    word-spacing: 5px;
+    line-height: 1.5;
+    margin-left: 50px;
+    height: 150px
+}
+
+.competencia-texto ol {
+    margin-left: 70px;
+    height: 200px
+}
+
+.competencia-texto ol li {
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+.competencia-texto ol li spam {
+    font-weight: 700;
+    text-shadow: 2px 2px 2px var(--preto);
+}
+
+.competencia-texto button {
+    margin: 40px 0 50px 100px;
+    width: 100%;
+    height: 50px;
+    font-size: 26px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 1s ease;
+}
